@@ -22,7 +22,7 @@ namespace JwtTokenAuth.Controllers
             _db = db;
         }
 
-        [HttpPost("login_")]
+        [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel user)
         {
             if (user is null)
