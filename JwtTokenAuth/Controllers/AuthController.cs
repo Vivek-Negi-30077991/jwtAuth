@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 
 namespace JwtTokenAuth.Controllers
-{
+{   
     [Route("api/[controller]")]
     [ApiController]
     // [AllowAnonymous]
@@ -22,6 +22,7 @@ namespace JwtTokenAuth.Controllers
             _db = db;
         }
 
+        //lpgin controller comment
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel user)
         {
